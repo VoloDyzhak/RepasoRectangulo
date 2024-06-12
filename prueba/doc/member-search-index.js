@@ -1,0 +1,1 @@
+memberSearchIndex = [{"p":"clase","c":"rectangulo","l":"arrea()"},{"p":"clase","c":"rectangulo","l":"rectangulo(int, int)","u":"%3Cinit%3E(int,int)"}];updateSearchResults();
