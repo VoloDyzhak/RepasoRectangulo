@@ -30,6 +30,7 @@ void testArea1() {
 }
 
 
+
 @Test
 
 void testPerimetro1() {
@@ -38,6 +39,31 @@ void testPerimetro1() {
 	assertEquals(perEsperada, perObtenida);
 }
 
+@Test 
+void testArea2() {
+	int Area2Esperada = 21;
+	int Area2Obtenida = r2.arrea();
+	assertEquals(Area2Esperada,Area2Obtenida);
+	
+}
 
+@Test 
+void testPerimetro2() {
+	int perimetro2Esparado = 20;
+	int perimetro2Obtenido = r2.perimetro();
+	assertEquals(perimetro2Esparado, perimetro2Obtenido);
+}
+@Test
+void testRectanguloExeption1() {
+	Exception exception = assertThrows(IllegalArgumentException.class,
+			() -> new rectangulo(-2,0));
+	String mensajeEsperado = "La base y altura deben ser superiores a 0";
+	String mensajeObtenido = exception.getMessage();
+	assertEquals(mensajeEsperado, mensajeObtenido);
+	
+		
+		
+	
+}
 
 }
